@@ -1,0 +1,98 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    background-color: black; /* Background for the entire section */
+}
+
+.services-title {
+    position: relative;
+}
+
+.services-title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding inside the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+}
+
+.service-item {
+    border: 2px solid white; /* White border around each service item */
+    border-radius: 10px; /* Rounded corners for each item */
+    padding: 20px;
+    width: 300px; /* Fixed width for each service item */
+    transition: transform 0.3s; /* Smooth hover effect */
+    color: white; /* Text color for better readability */
+    /* background: linear-gradient(270deg, #DA7C36, #B415FF); Gradient background */
+}
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background: linear-gradient(270deg, #DA7C36, #B415FF 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent */
+    color: transparent; /* Fallback for non-webkit browsers */
+}
+.service-item:hover {
+    border: 2px solid #ff00ff; /* Border color on hover */
+    background-image: linear-gradient(45deg, #3f0028, #582300); /* Change gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px; /* Space between description and link */
+    color: #DA7C36; /* Color to match your theme */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.read-more:hover {
+    color: #B415FF; /* Change color on hover */
+}
+
+.extra-description {
+    margin-top: 10px; /* Space between the main description and extra content */
+    color: #ddd; /* Lighter color for secondary information */
+    font-size: 16px; /* Font size for extra description */
+    line-height: 1.5; /* Improve readability */
+}
+.read-more {
+    display: flex; /* Use flexbox to align arrow */
+    align-items: center;
+    margin-top: 10px; /* Space between description and link */
+    color: white; /* Color to match your theme */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.arrow {
+    margin-left: 5px; /* Space between text and arrow */
+    transition: transform 0.3s; /* Smooth rotation */
+}
+
+.rotated {
+    transform: rotate(90deg); /* Rotate arrow when expanded */
+}
