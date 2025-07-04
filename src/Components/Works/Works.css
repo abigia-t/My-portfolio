@@ -1,0 +1,60 @@
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    background-color: black; /* Consistent background */
+}
+
+.work-title {
+    position: relative;
+}
+
+.work-title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+    color: white; /* Title color matching previous styles */
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+}
+
+.work-item {
+    border: 2px solid white; /* White border around each work item */
+    border-radius: 10px; /* Rounded corners for each item */
+    padding: 20px;
+    width: 300px; /* Fixed width for each work item */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    transition: transform 0.3s; /* Smooth hover effect */
+    color: white; /* Text color for better readability */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.work-item:hover {
+    border-color: #ff00ff; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.work-image {
+    height: 200px; /* Set a fixed height for images */
+    background-size: cover; /* Cover the entire div with the image */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Match the item border radius */
+}
+
+.work-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.work-item p {
+    font-size: 16px;
+    color: #ddd; /* Lighter color for descriptions */
+}
