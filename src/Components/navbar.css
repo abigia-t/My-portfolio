@@ -145,19 +145,55 @@
 .nav-connect:hover .connect-arrow {
   transform: translateX(4px);
 }
+.menu-icon{
+  display: none;
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar-container {
     padding: 0 20px;
   }
-  
+
   .nav-menu {
-    display: none; /* Will be shown in mobile menu */
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width */
+    background: var(--background); /* Match navbar background */
+    position: absolute; /* Positioning for dropdown */
+    top: 60px; /* Position below the navbar */
+    right: 0; /* Align to the right */
+    z-index: 999; /* Ensure it appears above other content */
+    padding: 10px 0;
+    transition: background 0.3s ease; /* Smooth transition */
   }
-  
+
+  .nav-menu.active {
+    display: flex; /* Show when active */
+    background-image: linear-gradient(45deg, #3f0028, #582300); /* Gradient for active menu */
+  }
+
+  .nav-item {
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center align for mobile */
+    padding: 10px 0; /* Spacing for links */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+    cursor: pointer;
+    font-size: 24px; /* Icon size */
+  }
+
   .nav-connect {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    display: none; /* Hide connect button on mobile */
+  }
+}
+
+/* Show connect button on larger screens */
+@media (min-width: 769px) {
+  .nav-connect {
+    display: block; /* Show connect button on larger screens */
   }
 }

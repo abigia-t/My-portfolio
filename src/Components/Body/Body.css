@@ -1,64 +1,97 @@
-.body{
+.body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     background-color: black;
-
+    padding: 20px; /* Added padding for mobile */
 }
+
 .body img {
     margin-top: 150px; /* Keep this as is */
-    width: 250px;      /* Set the desired width */
-    height: 250px;     /* Set the desired height */
+    width: 200px;      /* Adjusted width for mobile */
+    height: 200px;     /* Adjusted height for mobile */
     border-radius: 50%; /* Optional: makes the image circular */
     object-fit: cover;  /* Ensures the image fills the area */
 }
-.body h1{
-    text-align: center;
-    width: 60%;
-    font-size: 80px;
-    font-weight: 500;
 
+.body h1 {
+    text-align: center;
+    width: 80%; /* Increased width for mobile */
+    font-size: 40px; /* Adjusted font size for mobile */
+    font-weight: 500;
 }
-.body h1 span{
+
+.body h1 span {
     background: linear-gradient(270deg, #DA7C36, #B415FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
-.body p{
-    width: 50%;
+
+.body p {
+    width: 80%; /* Increased width for mobile */
     text-align: center;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px; /* Adjusted font size for mobile */
+    line-height: 24px; /* Adjusted line height for better readability */
 }
-.body-action{
+
+.body-action {
     display: flex;
+    flex-direction: column; /* Stack buttons vertically on mobile */
     align-items: center;
-    gap: 25px;
-    font-size: 24px;
+    gap: 15px; /* Reduced gap for mobile */
+    font-size: 20px; /* Adjusted font size for mobile */
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduced margin for mobile */
 }
-.body-connect{
-    padding: 25px 45px;
+
+.body-connect,
+.body-resume {
+    padding: 15px 30px; /* Adjusted padding for mobile */
     border-radius: 50px;
-    background: linear-gradient(270deg, #DA7C36 -5.09%, #B415FF 100%);
+    width: 100%; /* Full width for mobile buttons */
+    max-width: 300px; /* Limit max width for buttons */
     cursor: pointer;
+}
 
+.body-connect {
+    background: linear-gradient(270deg, #DA7C36 -5.09%, #B415FF 100%);
 }
-.body-resume{
-      padding: 25px 50px;
-      border-radius: 50px;
-      border: 2px solid #FFF;
-      cursor: pointer;
 
-  
+.body-resume {
+    border: 2px solid #FFF;
 }
-.body-connect:hover{
-      border: 2px solid #FFF;
+
+.body-connect:hover {
+    border: 2px solid #FFF;
 }
-.body-resume:hover{
+
+.body-resume:hover {
     border-color: #B415FF;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 769px) {
+    .body img {
+        width: 250px;      /* Original width for larger screens */
+        height: 250px;     /* Original height for larger screens */
+    }
+
+    .body h1 {
+        font-size: 80px; /* Original font size for larger screens */
+    }
+
+    .body p {
+        font-size: 24px; /* Original font size for larger screens */
+    }
+
+    .body-action {
+        flex-direction: row; /* Align buttons horizontally on larger screens */
+    }
+
+    .body-connect,
+    .body-resume {
+        padding: 25px 45px; /* Original padding for larger screens */
+    }
 }

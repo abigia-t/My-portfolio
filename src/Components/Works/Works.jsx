@@ -6,7 +6,7 @@ import Ecommerce from '../../assets/E-commerce.jpg';
 const Works = () => {
   const works = [
     {
-      title: 'Project One',
+    //   title: 'Project One',
     //   description: 'A brief description of Project One.',
       image: Ecommerce , // Replace with your image URLs
     },

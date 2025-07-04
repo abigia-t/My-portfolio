@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 40px; /* Reduced gap for mobile */
+    margin: 40px 20px; /* Adjusted margins for mobile */
     background-color: black; /* Background for the entire section */
 }
 
@@ -13,9 +13,10 @@
 }
 
 .services-title h1 {
-    padding: 0 30px;
-    font-size: 80px;
+    padding: 0 20px; /* Reduced padding */
+    font-size: 60px; /* Adjusted font size for mobile */
     font-weight: 600;
+    text-align: center; /* Center text for better mobile display */
 }
 
 .service-list {
@@ -31,32 +32,29 @@
     border: 2px solid white; /* White border around each service item */
     border-radius: 10px; /* Rounded corners for each item */
     padding: 20px;
-    width: 300px; /* Fixed width for each service item */
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Limit max width */
     transition: transform 0.3s; /* Smooth hover effect */
     color: white; /* Text color for better readability */
-    /* background: linear-gradient(270deg, #DA7C36, #B415FF); Gradient background */
 }
+
 .service-item h3 {
-    font-size: 24px;
+    font-size: 20px; /* Adjusted font size for mobile */
     margin-bottom: 10px;
     background: linear-gradient(270deg, #DA7C36, #B415FF 100%); /* Gradient background */
     -webkit-background-clip: text; /* Clip background to text */
     -webkit-text-fill-color: transparent; /* Make text color transparent */
     color: transparent; /* Fallback for non-webkit browsers */
 }
+
 .service-item:hover {
     border: 2px solid #ff00ff; /* Border color on hover */
     background-image: linear-gradient(45deg, #3f0028, #582300); /* Change gradient on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-.service-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .service-item p {
-    font-size: 16px;
+    font-size: 14px; /* Adjusted font size for mobile */
 }
 
 .read-more {
@@ -75,17 +73,8 @@
 .extra-description {
     margin-top: 10px; /* Space between the main description and extra content */
     color: #ddd; /* Lighter color for secondary information */
-    font-size: 16px; /* Font size for extra description */
+    font-size: 14px; /* Adjusted font size for mobile */
     line-height: 1.5; /* Improve readability */
-}
-.read-more {
-    display: flex; /* Use flexbox to align arrow */
-    align-items: center;
-    margin-top: 10px; /* Space between description and link */
-    color: white; /* Color to match your theme */
-    text-decoration: none; /* Remove underline */
-    font-weight: 500; /* Slightly bolder text */
-    transition: color 0.3s; /* Smooth color transition */
 }
 
 .arrow {
@@ -93,6 +82,21 @@
     transition: transform 0.3s; /* Smooth rotation */
 }
 
-.rotated {
-    transform: rotate(90deg); /* Rotate arrow when expanded */
+/* Media Queries for Larger Screens */
+@media (min-width: 769px) {
+    .services {
+        margin: 80px 170px; /* Original margins for larger screens */
+    }
+
+    .services-title h1 {
+        font-size: 80px; /* Original font size for larger screens */
+    }
+
+    .service-item h3 {
+        font-size: 24px; /* Original font size for larger screens */
+    }
+
+    .service-item p {
+        font-size: 16px; /* Original font size for larger screens */
+    }
 }
