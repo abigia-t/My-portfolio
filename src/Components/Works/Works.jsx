@@ -6,22 +6,22 @@ import Ecommerce from '../../assets/E-commerce.jpg';
 const Works = () => {
   const works = [
     {
-    //   title: 'Project One',
+     title: 'E-commerce',
     //   description: 'A brief description of Project One.',
       image: Ecommerce , // Replace with your image URLs
     },
     {
-      title: 'Project Two',
+      title: 'School Management System ',
     //   description: 'A brief description of Project Two.',
       image: SMS ,
     },
     {
-      title: 'Project Three',
+      title: 'school centric budget tracker',
     //   description: 'A brief description of Project Three.',
       image: 'url_to_image_3.jpg',
     },
     {
-      title: 'Project Four',
+      title: 'Book store',
     //   description: 'A brief description of Project Four.',
       image: 'url_to_image_4.jpg',
     },

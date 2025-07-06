@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css';
-import Profile_img from '../../assets/Profile_img.jpg';
+// import Profile_img from '../../assets/Profile_img.jpg';
 
 const About = () => {
   return (
@@ -9,9 +9,9 @@ const About = () => {
     <h>About me </h>
 </div>
 <div className="about-sections">
-    <div className="about-left">
+    {/* <div className="about-left">
         <img src={Profile_img} alt="" />
-    </div>
+    </div> */}
     <div className="about-right">
         <div className="about-para">
             <p>I am Abigia Tarekegn, a dedicated full-stack developer based in Addis Ababa. With a strong foundation in both front-end and back-end technologies, I thrive on creating dynamic web applications that deliver seamless user experiences. My passion for coding drives me to tackle challenges and find innovative solutions.</p>

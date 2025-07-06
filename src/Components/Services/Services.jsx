@@ -17,36 +17,36 @@ const Services = () => {
       title: 'Web Development',
       description: 'Creating responsive and dynamic websites tailored to client needs...',
       extra: [
-        'We specialize in modern frameworks like React and Angular.',
-        'Our websites are optimized for SEO and performance.',
-        'We ensure cross-browser compatibility for a seamless experience.',
+        'I specialize in modern frameworks like React and Angular.',
+        'My websites are optimized for SEO and performance.',
+        'I ensure cross-browser compatibility for a seamless experience.',
       ],
     },
     {
       title: 'Backend Development',
       description: 'Building robust server-side applications and APIs for seamless data management...',
       extra: [
-        'We use Node.js and Express for efficient server-side logic.',
-        'Our APIs are RESTful and designed for ease of use.',
-        'We implement secure authentication mechanisms.',
+        'I use Node.js and Express for efficient server-side logic.',
+        'My APIs are RESTful and designed for ease of use.',
+        'I implement secure authentication mechanisms.',
       ],
     },
     {
       title: 'Mobile App Development',
       description: 'Developing cross-platform mobile applications that provide a great user experience...',
       extra: [
-        'We create apps using Flutter for fast development and performance.',
-        'Our apps are designed with a user-first approach.',
-        'We ensure compatibility across iOS and Android devices.',
+        'I create apps using Flutter for fast development and performance.',
+        'My apps are designed with a user-first approach.',
+        'I ensure compatibility across iOS and Android devices.',
       ],
     },
     {
       title: 'UI/UX Design',
       description: 'Crafting intuitive and visually appealing user interfaces to enhance user experiences...',
       extra: [
-        'We conduct user research to inform our design decisions.',
-        'Our designs are responsive and accessible.',
-        'We create prototypes to gather feedback before development.',
+        'I conduct user research to inform our design decisions.',
+        'My designs are responsive and accessible.',
+        'I create prototypes to gather feedback before development.',
       ],
     },
   ];
