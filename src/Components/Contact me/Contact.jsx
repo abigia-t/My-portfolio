@@ -8,7 +8,7 @@ const MAX_RETRIES = 5;
 const onSubmit = async (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
-  formData.append("access_key", "YOUR_ACCESS_KEY");
+  formData.append("access_key", "2788b043-b404-4cff-ae8a-93d4bfc2fcb0");
 
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
