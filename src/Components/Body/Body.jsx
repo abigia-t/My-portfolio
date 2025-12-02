@@ -1,7 +1,7 @@
 import React from 'react';
 import './Body.css';
 import Profile_img from '../../assets/Profile_img.jpg';
-import Resume from '../../assets/ABIGIA TAREKEGN resume.pdf'; // Adjust the path as necessary
+import Resume from '../../assets/Updated CV.pdf'; // Adjust the path as necessary
 
 const Body = () => {
   return (
